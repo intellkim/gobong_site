@@ -2480,6 +2480,12 @@ input[type="radio"]+label:before {
 
 .image.main img {
 	width: 100%;
+	max-width: 800px;
+	/* PC 기준 최대 너비 제한 */
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (max-width: 736px) {
@@ -2936,12 +2942,12 @@ body.is-touch .tiles article .content {
 
 @media screen and (max-width: 480px) {
 	.tiles {
-		margin: -1.25em 0 0 -1.25em;
+		margin: -0.5em 0 0 -0.5em;
 	}
 
 	.tiles article {
-		width: calc(50% - 1.25em);
-		margin: 1.25em 0 0 1.25em;
+		width: calc(50% - 0.5em);
+		margin: 0.5em 0 0 0.5em;
 	}
 }
 
