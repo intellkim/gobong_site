@@ -3456,3 +3456,592 @@ body.is-menu-visible #menu .close {
 	}
 
 }
+
+/* Evangelist mission theme */
+
+:root {
+	--mission-ink: #163b36;
+	--mission-forest: #0f302c;
+	--mission-sage: #dfe9df;
+	--mission-cream: #f7f1e5;
+	--mission-paper: #fffdf8;
+	--mission-sun: #d8994e;
+	--mission-clay: #aa5d3c;
+	--mission-line: rgba(22, 59, 54, 0.16);
+}
+
+body {
+	background:
+		radial-gradient(circle at 9% 4%, rgba(216, 153, 78, 0.18), transparent 22rem),
+		radial-gradient(circle at 92% 18%, rgba(90, 135, 104, 0.15), transparent 27rem),
+		var(--mission-cream);
+	color: var(--mission-ink);
+}
+
+body,
+input,
+select,
+textarea {
+	font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Source Sans Pro", sans-serif;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#header .logo {
+	color: var(--mission-ink);
+	font-family: "Noto Serif KR", "Nanum Myeongjo", "Iowan Old Style", Georgia, serif;
+}
+
+a {
+	color: var(--mission-forest);
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+#header {
+	padding: 2.35em 0 1.85em;
+	background: rgba(247, 241, 229, 0.78);
+	border-bottom: 1px solid var(--mission-line);
+}
+
+#header .inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#header .inner:after {
+	content: '';
+	position: absolute;
+	bottom: -1.85em;
+	left: 2.5em;
+	right: 2.5em;
+	height: 4px;
+	background: linear-gradient(90deg, var(--mission-sun) 0 5.5rem, transparent 5.5rem);
+}
+
+#header .logo {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.8em;
+	font-size: 1.04em;
+	letter-spacing: 0.055em;
+	text-decoration: none;
+}
+
+#header .logo:before {
+	content: '';
+	width: 1.85em;
+	height: 1.85em;
+	border: 1px solid var(--mission-sun);
+	border-radius: 50%;
+	background:
+		linear-gradient(var(--mission-sun), var(--mission-sun)) center / 1px 62% no-repeat,
+		linear-gradient(90deg, var(--mission-sun), var(--mission-sun)) center / 62% 1px no-repeat;
+	box-shadow: 0 0 0 5px rgba(216, 153, 78, 0.12);
+}
+
+#header .logo .title {
+	font-weight: 700;
+}
+
+#header nav ul li a[href="#menu"] {
+	width: 3.1em;
+	height: 3.1em;
+	border: 1px solid var(--mission-line);
+	border-radius: 50%;
+	background-color: var(--mission-paper);
+	box-shadow: 0 8px 20px rgba(15, 48, 44, 0.08);
+}
+
+#header nav ul li a[href="#menu"]:before,
+#header nav ul li a[href="#menu"]:after {
+	background-color: var(--mission-forest);
+}
+
+#header nav ul li a[href="#menu"]:hover {
+	background-color: var(--mission-forest);
+	border-color: var(--mission-forest);
+}
+
+#header nav ul li a[href="#menu"]:hover:before,
+#header nav ul li a[href="#menu"]:hover:after {
+	background-color: var(--mission-paper);
+}
+
+#main {
+	padding: 4.75em 0 6.5em;
+}
+
+#main>.inner {
+	position: relative;
+}
+
+#main>.inner>header {
+	position: relative;
+	max-width: 62em;
+	margin: 0 0 4.25em;
+	padding: 3.4em 4em 3em;
+	overflow: hidden;
+	background: var(--mission-paper);
+	border: 1px solid var(--mission-line);
+	border-radius: 2px 2px 2.8em 2px;
+	box-shadow: 0 1.35em 3.3em rgba(19, 54, 45, 0.11);
+}
+
+#main>.inner>header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	background: linear-gradient(90deg, var(--mission-forest), var(--mission-sun), var(--mission-forest));
+}
+
+#main>.inner>header:after {
+	content: '';
+	position: absolute;
+	width: 17em;
+	height: 17em;
+	right: -7.5em;
+	bottom: -8.5em;
+	border: 1px solid rgba(216, 153, 78, 0.34);
+	border-radius: 50%;
+	box-shadow: 0 0 0 2.7em rgba(216, 153, 78, 0.06), 0 0 0 5.5em rgba(216, 153, 78, 0.035);
+	pointer-events: none;
+}
+
+#main>.inner>header h1 {
+	position: relative;
+	margin-bottom: 1.05em;
+	font-size: clamp(2.25em, 5vw, 4.25em);
+	font-weight: 700;
+	line-height: 1.18;
+	letter-spacing: -0.06em;
+}
+
+#main>.inner>header h1:after {
+	content: '';
+	display: block;
+	width: 3.35em;
+	height: 3px;
+	margin-top: 0.6em;
+	background: var(--mission-sun);
+}
+
+#main>.inner>header p {
+	position: relative;
+	max-width: 43em;
+	margin: 0.45em 0;
+	font-size: 1.08em;
+	line-height: 1.85;
+}
+
+#main>.inner>header p strong {
+	color: var(--mission-clay);
+	font-weight: 800;
+}
+
+#main>.inner>header h3 {
+	position: relative;
+	display: inline-block;
+	margin: 2em 0 0;
+	padding: 0.72em 1em;
+	background: rgba(223, 233, 223, 0.65);
+	border-left: 3px solid var(--mission-sun);
+	color: var(--mission-forest);
+	font-family: inherit;
+	font-size: 0.9em;
+	font-weight: 700;
+	line-height: 1.55;
+	letter-spacing: -0.03em;
+}
+
+/* Individual prayer pages and the encouragement page */
+
+#main>.inner>h1,
+#main>.inner>section>h2 {
+	position: relative;
+	display: inline-block;
+	margin: 0 0 1.45em;
+	padding-bottom: 0.58em;
+	font-size: clamp(2em, 4vw, 3.1em);
+	font-weight: 700;
+	letter-spacing: -0.055em;
+}
+
+#main>.inner>h1:after,
+#main>.inner>section>h2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 3.1em;
+	height: 3px;
+	background: var(--mission-sun);
+}
+
+#main .image.main {
+	max-width: 56em;
+	margin: 0 0 2.4em;
+	padding: 0.55em;
+	background: var(--mission-paper);
+	border: 1px solid var(--mission-line);
+	border-radius: 1.25em 1.25em 1.25em 0.2em;
+	box-shadow: 0 1.2em 2.8em rgba(19, 54, 45, 0.1);
+}
+
+#main .image.main img {
+	border-radius: 0.8em 0.8em 0.8em 0.1em;
+}
+
+#main>.inner>p {
+	position: relative;
+	max-width: 56em;
+	margin: 0.9em 0;
+	padding: 1.1em 1.2em 1.1em 3.1em;
+	background: var(--mission-paper);
+	border: 1px solid rgba(22, 59, 54, 0.12);
+	border-radius: 0 1.2em 1.2em 1.2em;
+	box-shadow: 0 0.7em 1.7em rgba(19, 54, 45, 0.06);
+	font-size: 1.06em;
+	line-height: 1.8;
+}
+
+#main>.inner>p:before {
+	content: '';
+	position: absolute;
+	top: 1.58em;
+	left: 1.25em;
+	width: 0.7em;
+	height: 0.7em;
+	border: 2px solid var(--mission-sun);
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px rgba(216, 153, 78, 0.14);
+}
+
+#main>.inner>section {
+	max-width: 58em;
+	padding: 2.9em 3.1em;
+	background: var(--mission-paper);
+	border: 1px solid var(--mission-line);
+	border-radius: 1.4em 0.2em 1.4em 0.2em;
+	box-shadow: 0 1.2em 2.8em rgba(19, 54, 45, 0.09);
+}
+
+#main>.inner>section .alt li {
+	padding: 1.25em 0;
+	border-top-color: var(--mission-line);
+}
+
+/* Community prayer board */
+
+.tiles {
+	gap: 1.45em;
+	margin: 0;
+}
+
+.tiles article {
+	width: calc(33.33333% - 0.97em);
+	margin: 0;
+	overflow: hidden;
+	border: 1px solid rgba(22, 59, 54, 0.14);
+	border-radius: 1.2em 0.22em 1.2em 0.22em;
+	box-shadow: 0 1em 2.2em rgba(19, 54, 45, 0.11);
+}
+
+.tiles article>.image {
+	aspect-ratio: 4 / 5;
+	border-radius: inherit;
+	background: var(--mission-forest);
+}
+
+.tiles article>.image img {
+	height: 100%;
+	object-fit: cover;
+	filter: saturate(0.78) sepia(0.12) contrast(1.04);
+}
+
+.tiles article>.image:before,
+.tiles article.style1>.image:before,
+.tiles article.style2>.image:before,
+.tiles article.style3>.image:before,
+.tiles article.style4>.image:before,
+.tiles article.style5>.image:before,
+.tiles article.style6>.image:before {
+	background: linear-gradient(180deg, rgba(15, 48, 44, 0.05) 25%, rgba(15, 48, 44, 0.86) 100%);
+	opacity: 1;
+}
+
+.tiles article:nth-child(4n+2)>.image:before {
+	background: linear-gradient(180deg, rgba(170, 93, 60, 0.06) 25%, rgba(86, 45, 36, 0.88) 100%);
+}
+
+.tiles article:nth-child(4n+3)>.image:before {
+	background: linear-gradient(180deg, rgba(216, 153, 78, 0.06) 25%, rgba(58, 67, 43, 0.9) 100%);
+}
+
+.tiles article>.image:after {
+	background-image: linear-gradient(135deg, rgba(255, 253, 248, 0.35) 1px, transparent 1px);
+	background-size: 1.2em 1.2em;
+	opacity: 0.14;
+}
+
+.tiles article>a {
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding: 1.55em;
+	border-radius: inherit;
+	background: linear-gradient(180deg, transparent 38%, rgba(15, 48, 44, 0.28) 100%);
+	text-align: left;
+}
+
+.tiles article>a h2 {
+	position: relative;
+	padding-top: 0.7em;
+	color: var(--mission-paper);
+	font-size: 1.65em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	text-shadow: 0 2px 12px rgba(0, 0, 0, 0.32);
+}
+
+.tiles article>a h2:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.55em;
+	height: 2px;
+	background: var(--mission-sun);
+}
+
+body:not(.is-touch) .tiles article:hover {
+	transform: translateY(-0.45em);
+}
+
+body:not(.is-touch) .tiles article:hover>.image {
+	transform: scale(1.06);
+}
+
+body:not(.is-touch) .tiles article:hover>.image:before {
+	background: linear-gradient(180deg, rgba(216, 153, 78, 0.1), rgba(15, 48, 44, 0.74));
+	opacity: 1;
+}
+
+body:not(.is-touch) .tiles article:hover>.image:after {
+	opacity: 0.08;
+}
+
+/* Menu, form and footer */
+
+#menu {
+	background-color: var(--mission-forest);
+	color: var(--mission-paper);
+}
+
+#menu h2,
+#menu a {
+	color: var(--mission-paper);
+}
+
+#menu>.inner>ul>li {
+	border-top-color: rgba(255, 253, 248, 0.16);
+}
+
+#menu>.inner>ul>li a:hover {
+	color: #f4c780;
+}
+
+#menu>.close:before,
+#menu>.close:after {
+	background-color: var(--mission-paper);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	background: rgba(255, 253, 248, 0.96);
+	border-color: rgba(255, 253, 248, 0.5);
+	border-radius: 0.55em;
+	color: var(--mission-ink);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+	border-color: var(--mission-sun);
+	box-shadow: 0 0 0 2px rgba(216, 153, 78, 0.25);
+}
+
+input[type="submit"].primary,
+button.primary,
+.button.primary {
+	background-color: var(--mission-sun);
+	color: var(--mission-forest) !important;
+	font-family: inherit;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+}
+
+input[type="submit"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+	background-color: #f2bd73;
+}
+
+#footer {
+	position: relative;
+	padding: 5.5em 0 5em;
+	background:
+		linear-gradient(115deg, rgba(216, 153, 78, 0.14), transparent 38%),
+		var(--mission-forest);
+	color: rgba(255, 253, 248, 0.86);
+}
+
+#footer:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(90deg, var(--mission-sun), rgba(216, 153, 78, 0.18), var(--mission-sun));
+}
+
+#footer h2 {
+	color: var(--mission-paper);
+	font-weight: 700;
+}
+
+#footer .copyright {
+	color: rgba(255, 253, 248, 0.55);
+}
+
+#footer>.inner .copyright li {
+	border-left-color: rgba(255, 253, 248, 0.2);
+}
+
+@media screen and (max-width: 980px) {
+
+	.tiles article {
+		width: calc(50% - 0.725em);
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	#header {
+		padding: 1.65em 0 1.4em;
+	}
+
+	#header .inner:after {
+		left: 1.25em;
+		right: 1.25em;
+		bottom: -1.4em;
+	}
+
+	#header .logo {
+		font-size: 0.88em;
+		letter-spacing: 0.02em;
+	}
+
+	#header .logo:before {
+		width: 1.55em;
+		height: 1.55em;
+	}
+
+	#main {
+		padding: 3em 0 4em;
+	}
+
+	#main>.inner>header {
+		margin-bottom: 2.5em;
+		padding: 2.45em 1.5em 2.2em;
+		border-radius: 2px 2px 1.7em 2px;
+	}
+
+	#main>.inner>header p {
+		font-size: 1em;
+		line-height: 1.75;
+	}
+
+	#main>.inner>header h3 {
+		font-size: 0.82em;
+	}
+
+	#main>.inner>section {
+		padding: 2.1em 1.45em;
+	}
+
+	#main>.inner>p {
+		padding: 1em 1em 1em 2.75em;
+		font-size: 1em;
+	}
+
+	#main>.inner>p:before {
+		left: 1.05em;
+	}
+
+	.tiles {
+		gap: 1em;
+	}
+
+	.tiles article {
+		width: calc(50% - 0.5em);
+		border-radius: 0.95em 0.16em 0.95em 0.16em;
+	}
+
+	.tiles article>a {
+		padding: 1.1em;
+	}
+
+	.tiles article>a h2 {
+		font-size: 1.32em;
+	}
+
+	#footer {
+		padding: 3.8em 0 2em;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.tiles article {
+		width: 100%;
+	}
+
+	.tiles article>.image {
+		aspect-ratio: 16 / 11;
+	}
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	*,
+	*:before,
+	*:after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+	}
+
+}
